@@ -14,4 +14,14 @@ export function Number(value?: any): any {
         const container = document.getElementById('container');
         container.innerHTML = `${container.innerHTML}my number: ${i}`;
     }  
+
+    teamService = TestBed.get(TeamService);;
+ 
+ 
+/
+}
+
+/ in case of inlined interface
+private loadData(options: { skip: number; take: number; }) {
+  // ...
 }
