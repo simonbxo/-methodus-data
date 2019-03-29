@@ -10,6 +10,7 @@ export function Number(value?: any): any {
     });
 
     for (let i = 0; i < 5; i++) {  
+        
         const container = document.getElementById('container');
         container.innerHtml = `${container.innerHtml}my number: ${i}`;
     }  
