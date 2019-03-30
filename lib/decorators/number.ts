@@ -25,3 +25,16 @@ export function Number(value?: any): any {
 private loadData(options: { skip: number; take: number; }) {
   // ...
 }
+
+var myObject = {};
+
+// ...
+myObject.fname = undefined;  // Noncompliant
+// ...
+
+if (myObject.lname == undefined) {
+  // property not yet created
+}
+if (myObject.fname == undefined) {
+  // no real way of knowing the true state of myObject.fname
+}
