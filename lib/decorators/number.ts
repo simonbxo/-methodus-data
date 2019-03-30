@@ -8,4 +8,10 @@ export function Number(value?: any): any {
         param: 'number',
         value: value
     });
+
+    for (let i = 0; i < 5; i++) {  
+
+        const container = document.getElementById('container');
+        container.innerHTML = `${container.innerHTML}my number: ${i}`;
+    }  
 }
