@@ -8,41 +8,10 @@ export function Number(value?: any): any {
         param: 'number',
         value: value
     });
-
-    for (let i = 0; i < 5; i++) {  
-
-        const container = document.getElementById('container');
-        container.innerHTML = `${container.innerHTML}my number: ${i}`;
-    }  
-
-    teamService = TestBed.get(TeamService);;
  
+    
  
-/
+
 }
 
-/ in case of inlined interface
-private loadData(options: { skip: number; take: number; }) {
-  // ...
-}
 
-var myObject = {};
-
-// ...
-myObject.fname = undefined;  // Noncompliant
-// ...
-
-if (myObject.lname == undefined) {
-  // property not yet created
-}
-if (myObject.fname == undefined) {
-  // no real way of knowing the true state of myObject.fname
-}
-
-var john = {
-    firstName: "john",
-    show: function() { console.log(firstName); } // Noncompliant: firstName is not defined
-  }
-  
-
-  john.show();
