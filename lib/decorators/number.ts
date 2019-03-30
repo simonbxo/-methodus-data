@@ -43,4 +43,6 @@ var john = {
     firstName: "john",
     show: function() { console.log(firstName); } // Noncompliant: firstName is not defined
   }
+  
+
   john.show();
