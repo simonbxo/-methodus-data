@@ -38,3 +38,9 @@ if (myObject.lname == undefined) {
 if (myObject.fname == undefined) {
   // no real way of knowing the true state of myObject.fname
 }
+
+var john = {
+    firstName: "john",
+    show: function() { console.log(firstName); } // Noncompliant: firstName is not defined
+  }
+  john.show();
