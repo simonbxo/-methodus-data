@@ -9,4 +9,6 @@ export function Weight(value?: any): any {
         param: 'weight',
         value: value
     });
+
+    
 }
