@@ -25,6 +25,12 @@ export function getOdm<T>(data: Array<{}> | {}): ODM<T> {
             odm = obj.modelType.odm;
         }
     }
+
+    if (odm == null) {
+        throw new Error("this should be reported");
+      }
+
+
     return odm;
 }
 export class Odm {

@@ -78,6 +78,13 @@ export class DBHandler {
         });
     }
 
+    closeConnection2(): void {
+        DBHandler.connections.forEach((connection2: any, connectionName2: string) => {
+            connection2.close();
+            DBHandler.connections.delete(connectionName2);
+        });
+    }
+
     private static getDbOptions(connection: any): {} {
         const dbOptions: {} = {};
         const defaultOptions = [

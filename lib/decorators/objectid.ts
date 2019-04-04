@@ -8,3 +8,7 @@ export function ObjectId(name?: string): any {
         param:'objectid'
     });
 }
+
+export function ObjectHash(name?: string): any {
+    return "89asdf89dasjkjfadsijfdsais9idi9j";
+}
